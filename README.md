@@ -24,7 +24,7 @@
 ## 💻 Sobre o projeto <a name="sobre"></a>
 
 <p align="center">
-  <img src="src/images/screenshot.png" alt="shopping cart">
+  <img src="src/images/shopping-cart.png" alt="screenshot">
 </p>
 
 <p>Esse projeto é uma tela de checkout de uma loja virtual, nele é possível visualizar todos produtos comprados, visualizar as opções de frete disponiveis, interagir com a quantidade de itens e escolher uma opção de frete.</p>
