@@ -77,7 +77,7 @@ export const App = () => {
 
   const checkout = () => {
     setNotification(true);
-    if (totalCart && (selected.CORREIOS || selected.TRANSPORTADORA) > 0) {
+    if (totalCart && priceFreight) {
       setTimeout(() => {
         window.location.reload();
       }, 1000);
@@ -153,13 +153,9 @@ export const App = () => {
         </Aside>
         {notification ? (
           <Alert
-            image={
-              totalCart && (selected.CORREIOS || selected.TRANSPORTADORA)
-                ? check
-                : alert
-            }
+            image={totalCart && priceFreight ? check : alert}
             text={
-              totalCart && (selected.CORREIOS || selected.TRANSPORTADORA)
+              totalCart && priceFreight
                 ? 'Pedido feito com sucesso'
                 : 'Escolha pelo menos um produto e o frete'
             }
